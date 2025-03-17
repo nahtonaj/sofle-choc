@@ -26,16 +26,16 @@ layers:
   - P
   - \
   - {t: ESC, h: LCTRL}
-  - A
-  - S
-  - D
-  - F
+  - {t: A, h: LEFT SHIFT}
+  - {t: S, h: LEFT GUI}
+  - {t: D, h: LEFT ALT}
+  - {t: F, h: LCTRL}
   - G
   - H
-  - J
-  - K
-  - L
-  - ;
+  - {t: J, h: RCTRL}
+  - {t: K, h: RIGHT ALT}
+  - {t: L, h: RIGHT GUI}
+  - {t: ;, h: RIGHT SHIFT}
   - ''''
   - LSHFT
   - Z
