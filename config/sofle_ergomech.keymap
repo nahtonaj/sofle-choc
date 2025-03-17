@@ -69,14 +69,12 @@
 &kp GRAVE      &kp N1                &kp N2              &kp N3              &kp N4                &kp N5          &kp N6       &kp N7                     &kp N8               &kp N9               &kp N0                         &kp MINUS
 &kp TAB        &kp Q                 &kp W               &kp E               &kp R                 &kp T           &kp Y        &kp U                      &kp I                &kp O                &kp P                          &kp BACKSLASH
 &mt LCTRL ESC  &lh_pht LEFT_SHIFT A  &lh_pht LEFT_GUI S  &lh_pht LEFT_ALT D  &lh_pht LCTRL F       &kp G           &kp H        &rh_pht RCTRL J            &rh_pht RIGHT_ALT K  &rh_pht RIGHT_GUI L  &rh_pht RIGHT_SHIFT SEMICOLON  &kp SQT
-&kp LSHFT      &kp Z                 &kp X               &kp C               &kp V                 &kp B           &kp N        &kp M                      &kp COMMA            &kp DOT              &kp FSLH                       &kp RSHFT
+&kp LSHFT      &kp Z                 &kp X               &kp C               &kp V                 &kp B           &kp N        &kp M                      &kp COMMA            &kp DOT              &kp FSLH                       &kp EQUAL
 &kp C_MUTE     &kp LGUI              &kp LA(TAB)         &kp LEFT_ALT        &mt LEFT_SHIFT SPACE  &mt LGUI ENTER  &lt 2 SPACE  &mt RIGHT_SHIFT BACKSPACE  &lt 1 ENTER          &lt 3 DELETE         &kp RGUI
                                                                                                                    &kp ENTER    &kp RIGHT                  &kp UP_ARROW         &kp LEFT             &kp DOWN
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp C_VOL_DN C_VOL_UP>,
-                <&inc_dec_kp PG_UP PG_UP>;
+            sensor-bindings = <&inc_dec_kp DOWN UP>, <&inc_dec_kp PG_UP PG_UP>;
         };
 
         lower_layer {
@@ -115,7 +113,7 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4   &trans    &trans    &trans        &trans     &trans   &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4   &trans    &trans    &trans        &trans     &trans   &kp EQUAL
 &trans      &kp INS       &kp PSCRN     &kp K_CMENU   &trans        &trans         &trans    &kp HOME  &mkp MB5      &mkp MB4   &kp END  &trans
 &trans      &kp LALT      &kp LCTRL     &kp LSHFT     &trans        &kp CLCK       &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &kp DEL  &kp BSPC
 &trans      &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp K_PASTE   &trans         &trans    &trans    &trans        &trans     &trans   &trans
