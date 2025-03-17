@@ -48,7 +48,7 @@ layers:
   - ','
   - .
   - /
-  - RSHFT
+  - '='
   - MUTE
   - LGUI
   - Alt+TAB
@@ -142,7 +142,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '='
   - {t: ▽, type: trans}
   - INS
   - PSCRN
