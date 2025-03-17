@@ -99,9 +99,7 @@
                                                                      &kp A      &kp B     &kp C      &kp D      &kp E
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>,
-                <&inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp DOWN UP>, <&inc_dec_kp PG_UP PG_DN>;
         };
 
         raise_layer {
