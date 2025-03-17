@@ -216,7 +216,7 @@ layers:
   - RGB EFF
   - ''
   - BRIGHTNESS DEC
-  - VOLUME UP
+  - VOL UP
   - BRIGHTNESS INC
   - ''
   - ''
@@ -228,7 +228,7 @@ layers:
   - ''
   - ''
   - PREV
-  - VOLUME DOWN
+  - VOL DN
   - NEXT
   - ''
   - ''
