@@ -1,7 +1,70 @@
 layout: {zmk_keyboard: sofle_ergomech}
 layers:
-  default: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '', ESC, Q, W, E, R, T, Y, U, I, O, P, BSPC, TAB, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT, Z,
-    X, C, V, B, N, M, ',', ., /, RSHFT, MUTE, LGUI, LALT, LCTRL, lower, RET, SPACE, raise, RCTRL, RALT, RGUI, ENTER, RIGHT, UP ARROW, LEFT, DOWN]
+  default:
+  - '`'
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - '-'
+  - TAB
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - \
+  - {t: ESC, h: LCTRL}
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - ''''
+  - LSHFT
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - RSHFT
+  - MUTE
+  - LGUI
+  - Alt+TAB
+  - LEFT ALT
+  - {t: SPACE, h: LEFT SHIFT}
+  - {t: ENTER, h: LGUI}
+  - {t: SPACE, h: raise}
+  - {t: BACKSPACE, h: RIGHT SHIFT}
+  - {t: ENTER, h: lower}
+  - {t: DELETE, h: adjust}
+  - RGUI
+  - ENTER
+  - RIGHT
+  - UP ARROW
+  - LEFT
+  - DOWN
   lower:
   - '&studio_unlock'
   - F1
@@ -55,11 +118,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - A
@@ -86,11 +149,11 @@ layers:
   - CMENU
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - PG UP
   - {t: ▽, type: trans}
-  - UP
-  - {t: ▽, type: trans}
-  - '0'
+  - HOME
+  - '&mkp MB5'
+  - '&mkp MB4'
+  - END
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - LALT
@@ -98,9 +161,9 @@ layers:
   - LSHFT
   - {t: ▽, type: trans}
   - CLCK
-  - PG DN
   - LEFT
   - DOWN
+  - UP ARROW
   - RIGHT
   - DEL
   - BSPC
@@ -121,9 +184,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Gui+ENTER
   - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -152,9 +215,9 @@ layers:
   - RGB SAI
   - RGB EFF
   - ''
-  - ''
-  - ''
-  - ''
+  - BRIGHTNESS DEC
+  - VOLUME UP
+  - BRIGHTNESS INC
   - ''
   - ''
   - ''
@@ -164,6 +227,9 @@ layers:
   - ''
   - ''
   - ''
+  - PREV
+  - VOLUME DOWN
+  - NEXT
   - ''
   - ''
   - ''
@@ -174,10 +240,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - MUTE
   - ''
   - ''
   - ''
@@ -185,12 +248,12 @@ layers:
   - ''
   - ''
   - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - {type: held}
-  - ''
-  - ''
-  - {type: held}
-  - ''
-  - ''
   - ''
   - A
   - B
