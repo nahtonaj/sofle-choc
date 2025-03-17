@@ -141,7 +141,7 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp C_BRIGHTNESS_DEC C_BRIGHTNESS_INC,
+                <&inc_dec_kp C_BRIGHTNESS_DEC C_BRIGHTNESS_INC>,
                 <&inc_dec_kp PG_UP PG_DN>;
         };
     };
