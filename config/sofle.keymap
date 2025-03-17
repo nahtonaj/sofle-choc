@@ -28,6 +28,18 @@
             hold-trigger-key-positions = <5 6 7 8 9 10>;    // <---[[right-hand keys]]
         };
     };
+
+    behaviors {
+        rh_pht: right_positional_hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-unless-interrupted";
+            tapping-term-ms = <100>;                        // <---[[produces tap if held longer than tapping-term-ms]]
+            quick-tap-ms = <200>;
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <0 1 2 3 4>;    // <---[[right-hand keys]]
+        };
+    };
     // Activate ADJUST layer by pressing raise and lower
 
     conditional_layers {
@@ -121,12 +133,16 @@
             label = "adjust";
             bindings = <
 &bt BT_CLR         &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4                                          &none  &none       &none  &none       &none  &none
-&ext_power EP_TOG  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_EFF                                       &none  &none       &kp C_VOLUME_UP  &none       &none  &none
+&ext_power EP_TOG  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_EFF                                       &none  &kp C_BRIGHTNESS_INC &kp C_VOLUME_UP  &kp C_BRIGHTNESS_DEC       &none  &none
 &none              &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &none            &none            &none                                                 &none  &kp C_PREV  &kp C_VOLUME_DOWN  &kp C_NEXT &none  &none
 &none              &none            &none            &none            &none            &none            &rgb_ug RGB_TOG                      &none  &none       &kp C_MUTE         &none     &none  &none
                                     &none            &none            &none            &none            &none              &kp C_PLAY_PAUSE  &none  &none       &none  &none
                                                                                                                            &kp ENTER &kp RIGHT &kp UP &kp LEFT &kp DOWN
             >;
+
+            sensor-bindings =
+                <&inc_dec_kp C_BRIGHTNESS_DEC C_BRIGHTNESS_INC,
+                <&inc_dec_kp PG_UP PG_DN>;
         };
     };
 };
