@@ -62,9 +62,9 @@ layers:
   - RGUI
   - PLAY PAUSE
   - NEXT
-  - POWER
+  - Ctl+Gui+Q
   - PREV
-  - PIP
+  - Gui+W
   lower:
   - '&studio_unlock'
   - F1
