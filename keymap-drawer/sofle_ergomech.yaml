@@ -60,11 +60,11 @@ layers:
   - {t: ENTER, h: lower}
   - {t: DELETE, h: adjust}
   - RGUI
-  - ENTER
-  - RIGHT
-  - UP ARROW
-  - LEFT
-  - DOWN
+  - PLAY PAUSE
+  - NEXT
+  - POWER
+  - PREV
+  - PIP
   lower:
   - '&studio_unlock'
   - F1
@@ -125,11 +125,11 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - A
-  - B
-  - C
-  - D
-  - E
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   raise:
   - BT CLR
   - {t: BT, h: '0'}
@@ -190,11 +190,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - A
-  - B
-  - C
-  - D
-  - E
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   adjust:
   - BT CLR
   - {t: BT, h: '0'}
@@ -255,8 +255,8 @@ layers:
   - ''
   - {type: held}
   - ''
-  - A
-  - B
-  - C
-  - D
-  - E
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
