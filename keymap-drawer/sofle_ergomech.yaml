@@ -233,7 +233,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - {t: gaming, h: toggle}
   - ''
   - ''
   - ''
@@ -260,3 +260,68 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  gaming:
+  - '`'
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - '-'
+  - TAB
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - \
+  - {t: ESC, h: LCTRL}
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - {t: J, h: RCTRL}
+  - {t: K, h: RIGHT ALT}
+  - {t: L, h: RIGHT GUI}
+  - {t: ;, h: RIGHT SHIFT}
+  - ''''
+  - LSHFT
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - '='
+  - MUTE
+  - LGUI
+  - Alt+TAB
+  - LEFT ALT
+  - SPACE
+  - {t: ENTER, h: LGUI}
+  - {t: SPACE, h: raise}
+  - {t: BACKSPACE, h: RIGHT SHIFT}
+  - {t: ENTER, h: lower}
+  - {t: DELETE, h: adjust}
+  - RGUI
+  - PLAY PAUSE
+  - NEXT
+  - Ctl+Gui+Q
+  - PREV
+  - Gui+W
