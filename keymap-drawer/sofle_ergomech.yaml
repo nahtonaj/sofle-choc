@@ -318,7 +318,7 @@ layers:
   - {t: SPACE, h: raise}
   - {t: BACKSPACE, h: RIGHT SHIFT}
   - {t: ENTER, h: lower}
-  - {t: DELETE, h: adjust}
+  - {t: default, h: toggle}
   - RGUI
   - PLAY PAUSE
   - NEXT
