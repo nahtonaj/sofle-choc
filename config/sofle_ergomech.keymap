@@ -139,7 +139,7 @@
 &bt BT_CLR         &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4     &none       &none                 &none         &none                 &none   &none
 &ext_power EP_TOG  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_EFF  &none       &kp C_BRIGHTNESS_DEC  &kp C_VOL_UP  &kp C_BRIGHTNESS_INC  &none   &none
 &none              &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &none            &none            &none            &none       &kp C_PREV            &kp C_VOL_DN  &kp C_NEXT            &none   &none
-&none              &none            &none            &none            &none            &none            &none       &none                 &kp C_MUTE    &none                 &none   &none
+&none              &to 4            &none            &none            &none            &none            &none       &none                 &kp C_MUTE    &none                 &none   &none
 &rgb_ug RGB_TOG    &none            &none            &none            &none            &none            &kp C_PLAY  &none                 &none         &none                 &none
                                                                                                         &trans      &trans                &trans        &trans                &trans
             >;
@@ -147,6 +147,22 @@
             sensor-bindings =
                 <&inc_dec_kp C_BRIGHTNESS_DEC C_BRIGHTNESS_INC>,
                 <&inc_dec_kp PG_UP PG_DN>;
+        };
+
+        gaming {
+            label = "gaming";
+            bindings = <
+&kp GRAVE      &kp N1    &kp N2       &kp N3        &kp N4     &kp N5          &kp N6            &kp N7                     &kp N8               &kp N9               &kp N0                         &kp MINUS
+&kp TAB        &kp Q     &kp W        &kp E         &kp R      &kp T           &kp Y             &kp U                      &kp I                &kp O                &kp P                          &kp BACKSLASH
+&mt LCTRL ESC  &kp A     &kp S        &kp D         &kp F      &kp G           &kp H             &rh_pht RCTRL J            &rh_pht RIGHT_ALT K  &rh_pht RIGHT_GUI L  &rh_pht RIGHT_SHIFT SEMICOLON  &kp SQT
+&kp LSHFT      &kp Z     &kp X        &kp C         &kp V      &kp B           &kp N             &kp M                      &kp COMMA            &kp DOT              &kp FSLH                       &kp EQUAL
+&kp C_MUTE     &kp LGUI  &kp LA(TAB)  &kp LEFT_ALT  &kp SPACE  &mt LGUI ENTER  &lt 2 SPACE       &mt RIGHT_SHIFT BACKSPACE  &lt 1 ENTER          &lt 3 DELETE         &kp RGUI
+                                                                               &kp C_PLAY_PAUSE  &kp C_NEXT                 &kp LC(LG(Q))        &kp C_PREV           &kp LG(W)
+            >;
+
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_DN C_VOL_UP>,
+                <&inc_dec_kp PG_UP PG_UP>;
         };
     };
 };
