@@ -50,7 +50,7 @@ layers:
   - /
   - '='
   - MUTE
-  - LGUI
+  - Gui+Sft+A
   - Alt+TAB
   - LEFT ALT
   - {t: SPACE, h: LEFT SHIFT}
