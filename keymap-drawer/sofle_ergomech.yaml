@@ -57,7 +57,7 @@ layers:
   - {t: ENTER, h: LGUI}
   - {t: SPACE, h: raise}
   - {t: BACKSPACE, h: RIGHT SHIFT}
-  - {t: Ctl+Alt+C, h: lower}
+  - {t: Gui+Sft+C, h: lower}
   - {t: DELETE, h: adjust}
   - RGUI
   - PLAY PAUSE
