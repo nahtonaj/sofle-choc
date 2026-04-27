@@ -66,7 +66,7 @@ layers:
   - PREV
   - Gui+W
   lower:
-  - '&studio_unlock'
+  - {t: ▽, type: trans}
   - F1
   - F2
   - F3
